@@ -12,7 +12,7 @@ const config = {
     mediaroot: "./media",
   },
   trans: {
-    ffmpeg: "./utils/ffmpeg/bin/ffmpeg.exe",
+    ffmpeg: "/usr/bin/ffmpeg",
     tasks: [
       {
         app: "live",

@@ -7,7 +7,7 @@ const nms = new NodeMediaServer(config);
 
 nms.on(StreamEvents.PostPublish, (id, streamPath, args) => {
   axios.put(
-    "http://localhost:4001/livestream/start",
+    "https://api.mazadlive.net/livestream/start",
     {},
     {
       headers: {
@@ -19,7 +19,7 @@ nms.on(StreamEvents.PostPublish, (id, streamPath, args) => {
 });
 nms.on(StreamEvents.DonePublish, (id, streamPath, args) => {
   axios.put(
-    "http://localhost:4001/livestream/end",
+    "https://api.mazadlive.net/livestream/end",
     {},
     {
       headers: {
